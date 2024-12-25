@@ -1,0 +1,16 @@
+def dectobin(decimal):
+    binary=bin(decimal)
+    print("binary equivalent of decimal",binary)
+
+def dectooct(decimal):
+    octal=oct(decimal)
+    print("octal eqivalent of decimal",octal)
+
+def dectohex(decimal):
+    hexa=hex(decimal)
+    print("hexa eqivalent of decimal",hexa)
+
+decimal=int(input("enter the decimal number"))
+dectobin(decimal)
+dectooct(decimal)
+dectohex(decimal)

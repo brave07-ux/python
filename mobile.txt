@@ -1,0 +1,11 @@
+import re
+filename=input("Enter file name:")
+file=open(filename,"r")
+data=file.read()
+mobile_pattern='\+91\d{10}'
+mobile_numbers=re.findall(mobile_pattern,data)
+print("mobile_number found:",mobile_numbers)
+Email_pattern=r'\b[A-Za-z0-9._]+@gmail.com'
+Email=re.findall(Email_pattern,data)
+print("email Id's found:",Email)
+file.close()

@@ -1,0 +1,16 @@
+list =input("enter the list of element separated by space:")
+list =list.split()
+N =len(list)
+print("list before swapping the element:",list)
+
+index1=int(input("enter the first element to swap"))
+index2=int(input("enter the second element to swap"))
+
+if(0<=index1<N and 0<=index2<N):
+           temp=list[index1]
+           list[index1]=list[index2]
+           list[index2]=temp
+           print("list after swapping list",list)
+else:
+    print("enter the valid input")
+

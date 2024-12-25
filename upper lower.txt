@@ -1,0 +1,25 @@
+Sentence = input("enter the sentence:")
+
+digit_count=0
+upper_count=0
+lower_count=0
+
+words =Sentence.split()
+word_count =len(words)
+
+for letter in Sentence:
+    if letter.isdigit():
+        digit_count =digit_count+1
+
+    elif letter.isupper():
+        upper_count =upper_count+1
+
+    elif letter.islower():
+        lower_count =lower_count+1
+
+print("no of words =",word_count)
+print("no of digit =",digit_count)
+print("no of uppercase =",upper_count)
+print("no of lowercase =",lower_count)    
+        
+        

@@ -1,0 +1,29 @@
+class PalindromeCheker:
+    def Palindrome(self,input_value):
+        pass
+class StringPal(PalindromeCheker):
+    def Palindrome(self,input_value):
+        return input_value == input_value[::-1]
+class IntegerPal(PalindromeCheker):
+    def Palindrome(self,input_value):
+        input_str==str(input_value)
+        return input_str==input_str[::-1]
+
+input_str=input("enter the string value:")
+String_cheker= StringPal()
+
+if String_cheker.Palindrome(input_str):
+    print("the input string is palindrome:")
+else:
+    print("the input string is not a palindrome:")
+print()
+
+input_num=int(input("enter the integer:"))
+integer_cheker=IntegerPal()
+
+if integer_cheker.Palindrome(input_num):
+    print("the input integer is palindrome:")
+else:
+    print("the input integer is not palindrome:")
+   
+              

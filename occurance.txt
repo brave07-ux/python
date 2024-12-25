@@ -1,0 +1,14 @@
+num =int(input("enter the number"))
+digit =int(input("enter the digit"))
+temp=num
+count=0
+res=0
+
+while(num>0):
+    rem= num%10
+    if(rem==digit):
+        count=count+1
+    rev =res*10+rem
+    num =num//10
+print("the digit",digit,"has occured",count,"times in",temp)        
+        
